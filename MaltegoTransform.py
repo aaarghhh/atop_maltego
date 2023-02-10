@@ -32,13 +32,12 @@ class MaltegoEntity(object):
     iconURL = ""
     entityType = "Phrase"
 
-    def __init__(self,eT=None,v=None):
+    def __init__(self,eT=None,v=None,additionFields=[]):
         if (eT is not None):
             self.entityType = eT
         if (v is not None):
             self.value = v
-        self.additionalFields = None
-        self.additionalFields = []
+        self.additionalFields = additionFields
         self.weight = 100
         self.displayInformation = []
         self.iconURL = ""
