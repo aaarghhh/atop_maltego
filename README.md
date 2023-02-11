@@ -1,5 +1,5 @@
 # ATOP Maltego Transform
-## REQURMENTS
+## REQUEREMENTS
 To run ATOP Maltego transform you need:
 - Python3 and pip 
 - Install atop `pip install "atop>=0.0.2-08"`
