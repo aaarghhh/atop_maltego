@@ -53,5 +53,16 @@ We'll be able to see all the new entities imported.
 
 ## EXECUTION
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/968839/218276997-a2f36ce8-706b-456e-bdfb-53fc6b518a82.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/968839/218277133-507e7c44-fad3-44ca-8a13-d25e51c1fa5b.png" />
+</p>
+
+
+
+
 
 
