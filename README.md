@@ -66,6 +66,14 @@ In the next part of the form, we'll be able to set the path of the atop-maltego.
   <img src="https://user-images.githubusercontent.com/968839/218277566-6ba9d4bf-4d48-4b35-83e3-278e0dbd7263.png" />
 </p>
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/968839/218285893-104ad5aa-0c61-4d4c-85bd-5c2887f56926.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/968839/218285913-36b93fb6-63eb-477e-b81d-a8dd1ec64131.png" />
+</p>
+
 ## EXECUTION
 
 <p align="center">
