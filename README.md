@@ -51,6 +51,15 @@ We'll be able to see all the new entities imported.
   <img src="https://user-images.githubusercontent.com/968839/218276509-8ccb7585-1b90-4ef1-a1dd-c67e8f2ad650.png" />
 </p>
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/968839/218277527-5614115e-3f16-462d-8461-b8e38fb77b89.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/968839/218277566-6ba9d4bf-4d48-4b35-83e3-278e0dbd7263.png" />
+</p>
+
+
 ## EXECUTION
 
 <p align="center">
