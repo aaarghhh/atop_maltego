@@ -71,7 +71,7 @@ In the next part of the form, we'll be able to set the path of the atop-maltego.
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/968839/218285974-98e29c83-0bb6-461d-8900-933a9e8d64e9.png" />
+  <img src="https://user-images.githubusercontent.com/968839/218286016-51b4ebcc-2ca7-4286-b15c-54b51ad06c70.png" />
 </p>
 
 ## EXECUTION
