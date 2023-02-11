@@ -6,7 +6,7 @@ To run ATOP Maltego transform you need:
 - Install Maltego CE
 - Choose a directory where your local transform will be downloaded and clone this repo `git clone https://github.com/aaarghhh/atop_maltego.git`
 - Install Entities from the packege atop.mtz
-- Create a new local transform in Maltego CE
+- Create three new local transform in Maltego CE
 
 ## INSTALLATION
 
