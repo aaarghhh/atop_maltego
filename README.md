@@ -50,7 +50,9 @@ We'll be able to see and use all the new entities imported. Eech entity has 2 pr
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218276509-8ccb7585-1b90-4ef1-a1dd-c67e8f2ad650.png" />
 </p>
-### CREATION OF EACH TRANSFORM 
+
+### CREATION OF EACH TRANSFORM
+
 Unfortunately each transfor must be created manually.   
   
 **STEP #1**: Select "Add Local Transform" and complete the form like the image below. As you can see in "Imput Entity Type" this transform will work only for the standard "Phone Maltego entity".  
