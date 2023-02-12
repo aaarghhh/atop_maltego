@@ -66,10 +66,13 @@ In the next part of the form, we'll be able to set the path of the atop-maltego.
   <img src="https://user-images.githubusercontent.com/968839/218277566-6ba9d4bf-4d48-4b35-83e3-278e0dbd7263.png" />
 </p>
 
+> To enable Domain and nickname transform you have to follo STEP1 and STEP2 and create 2 new local transfor.  
+The domain transform will be created as "Domain Maltego alias" for "Imput Entity Type".  
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218285951-9b94de85-52b3-4c1f-9e94-24655f1a6a65.png" />
 </p>
 
+To enable the nickname transform, we have to create a new Maltego transform related to an "Alias Maltego alias" as "Imput Entity Type".
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218286016-51b4ebcc-2ca7-4286-b15c-54b51ad06c70.png" />
 </p>
