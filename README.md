@@ -46,7 +46,7 @@ After that,  we have to install the Entity package `atop.mtx`
   <img src="https://user-images.githubusercontent.com/968839/218276399-24639bdb-1563-4351-8251-7ef9176ae720.png" />
 </p>
 
-We'll be able to see and use all the new entities imported. Each entity has 2 properties, the address and the name attribute. The TON address entity will contain information about the current balance and the related nickname used by the owner.
+We'll be able to see and use all the new entities imported. Each entity **has 2 properties**, the address and the name attribute. The TON address entity will contain information about the current balance and the related nickname used by the owner.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218276509-8ccb7585-1b90-4ef1-a1dd-c67e8f2ad650.png" />
 </p>
@@ -55,17 +55,17 @@ We'll be able to see and use all the new entities imported. Each entity has 2 pr
 
 Unfortunately, each transfer must be created manually.    
   
-STEP #1: Select "Add Local Transform" and complete the form like the image below. As you can see in "Input Entity Type" this transform will work only for the standard "Phone Maltego entity".
+**STEP #1**: Select "Add Local Transform" and complete the form like the image below. As you can see in "Input Entity Type" this transform will work only for the standard "Phone Maltego entity".
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218277527-5614115e-3f16-462d-8461-b8e38fb77b89.png" />
 </p>
 
-STEP #2: In the next part of the form, we'll be able to set the path of the atop-maltego.py script.
+**STEP #2**: In the next part of the form, we'll be able to set the path of the atop-maltego.py script.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218277566-6ba9d4bf-4d48-4b35-83e3-278e0dbd7263.png" />
 </p>
 
-> To enable Domain and nickname transform, we have to follow STEP1 and STEP2 and create 2 new local transforms.
+> To enable Domain and nickname transform, we have to follow **STEP1** and **STEP2** and create 2 new local transforms.
 
 The domain transform will be created as "Domain Maltego alias" for "Input Entity Type".
 <p align="center">
