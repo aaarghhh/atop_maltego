@@ -88,7 +88,7 @@ The graph will contains TON domain, nickname, domains and NFT related to an iden
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218277133-507e7c44-fad3-44ca-8a13-d25e51c1fa5b.png" />
 </p>
-Keep in mind that **Maltego CE supports only 12 new entity for single transform** so the result could be incomplete. 
+Keep in mind that Maltego CE supports only 12 new entity for single transform so the result could be incomplete. 
 
 
 
