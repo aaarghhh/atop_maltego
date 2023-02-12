@@ -66,7 +66,7 @@ In the next part of the form, we'll be able to set the path of the atop-maltego.
   <img src="https://user-images.githubusercontent.com/968839/218277566-6ba9d4bf-4d48-4b35-83e3-278e0dbd7263.png" />
 </p>
 
-> To enable Domain and nickname transform you have to follo STEP1 and STEP2 and create 2 new local transforms.  
+> To enable Domain and nickname transform we have to follow STEP1 and STEP2 and create 2 new local transforms.  
 
 The domain transform will be created as "Domain Maltego alias" for "Imput Entity Type".  
 <p align="center">
@@ -80,13 +80,15 @@ To enable the nickname transform, we have to create a new Maltego transform rela
 
 ## EXECUTION
 
+From a Domain, Alias or Telephone entity we'll be able to selecte the relating ATOP transform. Launching the procedure, Maltego will render all identified assets. 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218276997-a2f36ce8-706b-456e-bdfb-53fc6b518a82.png" />
 </p>
-
+The graph will contains TON domain, nickname, domains and NFT related to an identified TON owner. **For a domain search, ATOP will make an extra pivoting trying to identify any possible ENS domain**, in this case ETH address and a first related ENS domain will added to the relations.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/968839/218277133-507e7c44-fad3-44ca-8a13-d25e51c1fa5b.png" />
 </p>
+Keep in mind that Maltego CE supports only 12 new entity for single transform so the result could be incomplete. 
 
 
 
