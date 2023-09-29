@@ -118,8 +118,14 @@ Please enter the code you received: >? 12345
 Warning: Password input may be echoed.
 Please enter your password: xxxxxxxx 
 ```
-Check this for further information about [Telepathy](https://github.com/aaarghhh/a_TON_of_privacy#telegram-pivoting). After that, you will be able to use the Telegram integration. Telegram integration will be enabled only for TON Telephone Number and TON Nickname entities.
+Check this for further information about [Telepathy](https://github.com/aaarghhh/a_TON_of_privacy#telegram-pivoting).  
+After that, you will be able to use the Telegram integration. Telegram integration will be enabled only for TON Telephone Number and TON Nickname entities, and will disable simply removing .env file or its configurtation.  
+  
 If your Telegram settings is properly configured, if some TON assets will be related to a Telegram account, you will be able to see the Telegram entity with its detail and Telegram profile picture in the graph.
+
+<p align="center">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/968839/271732000-0b108579-7a21-4070-a1be-e208b79ad68c.png" />
+</p>
 
 ---
 
