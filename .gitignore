@@ -1,2 +1,5 @@
 .idea
 venv/
+.env
+*.session
+*.jpg
