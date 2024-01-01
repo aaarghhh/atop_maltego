@@ -15,13 +15,12 @@ def check_format(_string):
         return "NUMBER"
     if re.match(r"[a-z0-9-_]+\.ton", _string.strip()):
         return "DOMAIN"
-    if re.match(r"@[a-z0-9]", _string.strip()):
+    if re.match(r"@[a-z0-9_]", _string.strip()):
         return "NICKNAME"
     return "NONE"
 
 
 def scan_ton():
-
     search_maltego = asset_maltego.lower()
     if check_format(search_maltego) == "NONE":
         search_maltego = "@" + search_maltego
@@ -29,18 +28,34 @@ def scan_ton():
     try:
         telegram_pivot = True
 
-        if len(config)==0 or ( not config["API_ID"] or not config["API_HASH"] or not config["SESSION_STRING"] ):
+        if len(config) == 0 or (
+            not config["API_ID"]
+            or not config["API_HASH"]
+            or not config["SESSION_STRING"]
+        ):
             telegram_pivot = False
 
-        #print("telegram input --> " + search_maltego, str(True), str(False), str(True), "pivot: "+str(telegram_pivot), "---", config["API_ID"],
+        # print("telegram input --> " + search_maltego, str(True), str(False), str(True), "pivot: "+str(telegram_pivot), "---", config["API_ID"],
         #                               config["API_HASH"],"---", config["SESSION_STRING"])
-        #print("telegram pivot:  " + str(telegram_pivot))
+        # print("telegram pivot:  " + str(telegram_pivot))
 
         if telegram_pivot:
-            current_parser = Ton_retriever(search_maltego, True, False, True, telegram_pivot,None, config["API_HASH"], config["API_ID"]
-                                       ,None, config["SESSION_STRING"])
+            current_parser = Ton_retriever(
+                search_maltego,
+                True,
+                False,
+                True,
+                telegram_pivot,
+                None,
+                config["API_HASH"],
+                config["API_ID"],
+                None,
+                config["SESSION_STRING"],
+            )
         else:
-            current_parser = Ton_retriever(search_maltego, True, False, True, telegram_pivot)
+            current_parser = Ton_retriever(
+                search_maltego, True, False, True, telegram_pivot
+            )
         current_parser.start_searching()
     except Exception as exx:
         print(f"we got some problem, {exx}")
@@ -112,47 +127,58 @@ def scan_ton():
                     description = ""
                     partecipants = ""
 
-                    if "tg-data" in  item.keys():
+                    if "tg-data" in item.keys():
                         if "apidetail" in item["tg-data"][2].keys():
                             id = str(item["tg-data"][2]["apidetail"].id)
                             if item["tg-data"][2]["apidetail"].first_name:
-                                name =  name + item["tg-data"][2]["apidetail"].first_name
+                                name = name + item["tg-data"][2]["apidetail"].first_name
                             if item["tg-data"][2]["apidetail"].last_name:
-                                name =  name + item["tg-data"][2]["apidetail"].last_name
+                                name = name + item["tg-data"][2]["apidetail"].last_name
 
                         if "webdetail" in item["tg-data"][2].keys():
-                            if item["tg-data"][2]["webdetail"]["nickname"] and item["tg-data"][2]["webdetail"]["nickname"] != "N/A":
+                            if (
+                                item["tg-data"][2]["webdetail"]["nickname"]
+                                and item["tg-data"][2]["webdetail"]["nickname"] != "N/A"
+                            ):
                                 nickname = item["tg-data"][2]["webdetail"]["nickname"]
 
-                            if item["tg-data"][2]["webdetail"]["kind"] and item["tg-data"][2]["webdetail"][
-                                "kind"] != "N/A":
+                            if (
+                                item["tg-data"][2]["webdetail"]["kind"]
+                                and item["tg-data"][2]["webdetail"]["kind"] != "N/A"
+                            ):
                                 kind = item["tg-data"][2]["webdetail"]["kind"]
 
-                            if item["tg-data"][2]["webdetail"]["participants"] and item["tg-data"][2]["webdetail"][
-                                "participants"] != "N/A":
-                                partecipants = item["tg-data"][2]["webdetail"]["participants"]
+                            if (
+                                item["tg-data"][2]["webdetail"]["participants"]
+                                and item["tg-data"][2]["webdetail"]["participants"]
+                                != "N/A"
+                            ):
+                                partecipants = item["tg-data"][2]["webdetail"][
+                                    "participants"
+                                ]
 
-                            if item["tg-data"][2]["webdetail"]["image"] and item["tg-data"][2]["webdetail"][
-                                "image"] != "N/A":
+                            if (
+                                item["tg-data"][2]["webdetail"]["image"]
+                                and item["tg-data"][2]["webdetail"]["image"] != "N/A"
+                            ):
                                 photo = item["tg-data"][2]["webdetail"]["image"]
 
-                            if item["tg-data"][2]["webdetail"]["description"] and item["tg-data"][2]["webdetail"][
-                                "description"] != "N/A":
-                                description = item["tg-data"][2]["webdetail"]["description"]
+                            if (
+                                item["tg-data"][2]["webdetail"]["description"]
+                                and item["tg-data"][2]["webdetail"]["description"]
+                                != "N/A"
+                            ):
+                                description = item["tg-data"][2]["webdetail"][
+                                    "description"
+                                ]
 
                         extra_attributes = []
-                        extra_attributes.append(
-                            ["id", "Id", "id", id]
-                        )
-                        extra_attributes.append(
-                            ["name", "Name", "name", name]
-                        )
+                        extra_attributes.append(["id", "Id", "id", id])
+                        extra_attributes.append(["name", "Name", "name", name])
                         extra_attributes.append(
                             ["nickname", "Nickname", "nickname", nickname]
                         )
-                        extra_attributes.append(
-                            ["kind", "Kind", "kind", kind]
-                        )
+                        extra_attributes.append(["kind", "Kind", "kind", kind])
                         extra_attributes.append(
                             ["description", "Description", "description", description]
                         )
@@ -167,11 +193,9 @@ def scan_ton():
 
                         if photo != "" and photo != "N/A":
                             extra_attributes = []
-                            extra_attributes.append(
-                                ["url", "Url", "url", photo]
-                            )
+                            extra_attributes.append(["url", "Url", "url", photo])
                             tgPhoto = MaltegoEntity(
-                                "maltego.Image",photo , extra_attributes
+                                "maltego.Image", photo, extra_attributes
                             )
                             trx.entities.append(tgPhoto)
 
